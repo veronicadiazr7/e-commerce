@@ -1,0 +1,695 @@
+/*---HOME PAGE STYLE START*/
+.homepage {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+/*---HOME PAGE STYLE END*/
+
+html {
+  font-size: 65%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+/*---HEADER STYLE START---*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  font-family: "Courier New", Courier, monospace;
+}
+header .logo {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bolder;
+  text-decoration: none;
+}
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #666;
+  text-decoration: none;
+}
+
+header .icons a {
+  font-size: 2.5rem;
+  color: #333;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+header .fas-fa-bars {
+  font-size: 3rem;
+  color: #333;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  display: none;
+}
+/*---HEADER STYLE END---*/
+
+/*---SLIDESHOW STYLE START---*/
+.image-slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  padding-top: 90px;
+}
+
+.slides {
+  display: block;
+}
+
+.slides img {
+  width: 100%;
+  vertical-align: middle;
+}
+.circle-icon {
+  text-align: center;
+  background-color: bisque;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(205, 162, 162);
+  background-color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image-caption {
+  color: #f2f2f2;
+  padding: 6px 15px;
+  position: absolute;
+  bottom: 250px;
+  width: 100%;
+  text-align: left;
+}
+.image-caption h1 {
+  font-size: 80px;
+}
+p.about-us-description {
+  font-family: courier;
+}
+
+.About-us-button::before {
+  width: 0.31em;
+  height: 100%;
+  transform: skewY(-45deg);
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.about us btn {
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 0.075em;
+  padding: 0.8em 1em;
+  margin: auto 2em;
+  position: relative;
+  align-self: center;
+  text-transform: uppercase;
+  z-index: 1;
+  box-shadow: -0.5em 0.5em rgb(16 24 50 / 0%);
+  transition: all 200ms ease-in-out;
+}
+
+.image-caption p {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  background-color: #e91e63;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  bottom: 80px;
+}
+
+.active,
+.dot:hover {
+  background-color: #e9b8b8;
+}
+
+/*ANIMATION */
+.fading {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fading {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*---SLIDESHOW STYLE END---*/
+
+/*----ABOUT US MAIN PAGE START ----*/
+input#about-us-btn {
+  width: 30%;
+  color: rgb(81, 13, 44);
+  cursor: pointer;
+}
+
+h3.bible-verse {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+}
+/*----ABOUT US MAIN PAGE END ----*/
+
+/*--NEWSLETTER MAIN PAGE START--- */
+
+.newsletterimg img {
+  height: 60em;
+  float: left;
+  position: absolute;
+}
+.newsletterform {
+  float: right;
+  padding: 9em 9em;
+  /* font-size: large; */
+}
+.newsletterinfo h2,
+h3 {
+  color: white;
+}
+.newsletterinfo h3 {
+  text-transform: none;
+  font-weight: lighter;
+}
+
+input#consent-checkbox {
+  width: fit-content;
+  height: 20px;
+}
+.newsletterform label {
+  line-height: 4;
+  color: white;
+}
+.checkbox-text {
+  line-height: 2;
+  margin-left: 10px;
+  color: white;
+  font-size: large;
+}
+/*--NEWSLETTER MAIN PAGE START--- */
+
+/*---CONTACT US STYLE START---*/
+.contact-us {
+  background-image: url(Images/wrinkledpaperbackground.webp);
+  padding: 100px 70px;
+}
+.header-container {
+  font-size: larger;
+  text-align: center;
+}
+.header-container h1 {
+  text-align: center;
+  font-size: 3.2em;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px 1.2rem;
+  letter-spacing: 0.05em;
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+}
+.header-container h2 {
+  font-size: 1.7em;
+  text-align: left;
+}
+.header-container p {
+  font-size: 1.3em;
+  text-align: left;
+}
+.contact-container {
+  display: block;
+  max-width: 800px;
+  border-radius: 10px;
+  margin: 0px auto;
+  height: fit-content;
+}
+
+.contact-container form {
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 12px rgb(0 0 0 / 20%);
+  background-color: white;
+  font-size: larger;
+}
+input {
+  border: none;
+  border-radius: 7px;
+  background-color: #f3f3f3;
+  width: 100%;
+  padding: 10px 7px;
+}
+.contact-container form label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(30, 5, 5);
+  font-size: 18px;
+}
+.contact-form {
+  display: grid;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  line-height: 30px;
+  justify-items: stretch;
+}
+
+.contact-form-schedule {
+  text-align: center;
+  font-size: larger;
+}
+.contact-form-schedule p {
+  margin: auto;
+}
+.submitbttn {
+  grid-column: 1 / -1;
+  text-align: right;
+  padding: 32px;
+}
+.submitbttn input {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  width: 35%;
+  align-items: center;
+  cursor: pointer;
+  background-color: #e9b8b8;
+  text-transform: uppercase;
+}
+.contact-form-schedule h3 {
+  color: black;
+}
+/*---CONTACT US STYLE END---*/
+
+/*---ABOUT US STYLE START---*/
+.about-us-heading {
+  padding: 120px;
+  background-image: url(Images/wrinkledpaperbackground.webp);
+  height: 25px;
+}
+.about-us-heading h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px 1.2rem;
+  letter-spacing: 0.05em;
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+}
+.about-us-page {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+}
+.about.item h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(244, 193, 218);
+  font-size: 4rem;
+  font-weight: bold;
+}
+.about.item p {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(244, 193, 218);
+  font-size: 2.7rem;
+  text-align: justify;
+}
+.about {
+  width: 50%;
+  padding: 2em;
+  min-height: 400px;
+}
+.item {
+  color: #222;
+  background: rgba(3, 53, 46, 0.867);
+}
+.about-us-page-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  height: fit-content;
+  background-image: url(Images/wrinkledpaperbackground.webp);
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+.about-us-page-2 h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px 1.2rem;
+  letter-spacing: 0.05em;
+  background-color: rgba(13, 104, 67, 0.24);
+  transition: all ease-in-out 0.3s;
+}
+.about-us-h3 {
+  color: black;
+  font-size: xx-large;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  border: 1px solid black;
+  letter-spacing: 0.05em;
+  background-color: rgba(87, 12, 43, 0.24);
+  transition: all ease-in-out 0.3s;
+}
+.about-us-p {
+  text-align: justify;
+  padding-left: 20px;
+  overflow: auto;
+  padding-right: 20px;
+  text-transform: none;
+  font-size: x-large;
+  background-color: #f4f3f3a4;
+}
+/*---ABOUT US STYLE END---*/
+
+/*---PRODUCT STYLE START---*/
+.product-page {
+  background-image: url(Images/wrinkledpaperbackground.webp);
+  padding-bottom: 20px;
+}
+section.product-heading {
+  padding-top: 70px;
+}
+.shopheroimg img {
+  width: 100%;
+}
+.product-tittle h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px 1.2rem;
+  letter-spacing: 0.05em;
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+}
+section.product-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 600px;
+}
+.card-img {
+  height: 350px;
+  width: 100%;
+  padding: 10%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: stretch;
+}
+.card-body {
+  padding: 10px 0;
+}
+.card-header {
+  height: 50px;
+  margin-bottom: 10px;
+}
+.card-title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+.card-title:hover {
+  text-decoration: underline;
+}
+.product-data {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #aaa;
+}
+.product-footer {
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+.product-price {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.card-btn {
+  border: 1px solid black;
+  padding: 5px 1.2rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+}
+.card-btn::after {
+  content: "";
+  width: 80px;
+  height: 30px;
+  right: -2px;
+  top: 12px;
+  border: 1px solid black;
+  position: absolute;
+  z-index: -1;
+  transition: all ease-in-out 0.3s;
+  background-color: black;
+}
+.card-btn:hover {
+  background-color: black;
+  color: white;
+}
+.card-btn:hover::after {
+  right: 0px;
+  top: 10px;
+}
+/*---PRODUCT STYLE END---*/
+
+/*---FOOTER STYLE START---*/
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+  font-size: 15px;
+  color: rgba(6, 50, 28, 0.733);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col p {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: rgba(6, 50, 28, 0.733);
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-media ul li i {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.social-media ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+/*---FOOTER STYLE END---*/
+
+/*---MEDIA QUERIES START---*/
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 2rem;
+  }
+  .submitbttn input {
+    width: fit-content;
+  }
+  .image-caption {
+    bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  header .fas-fa-bars {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: whitesmoke;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+  }
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .contact-container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border: 0.01rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .submitbttn {
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .footer-col {
+    width: 100%;
+  }
+  .contact-container form label {
+    width: 50%;
+  }
+  input {
+    width: fit-content;
+  }
+  input#request-attachments {
+    width: 40%;
+  }
+  .submitbttn input {
+    text-align: left;
+    width: fit-content;
+  }
+  .slides-fading img {
+    width: 100%;
+  }
+}
+/*---MEDIA QUERIES END---*/

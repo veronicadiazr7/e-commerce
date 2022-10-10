@@ -1,0 +1,157 @@
+{
+  "Products": {
+    "Apparel": [
+      {
+        "name": "Vintage Denim Overalls",
+        "price": 24.95,
+        "size": "Medium",
+        "description": [
+          "Adjustable straps",
+          "Hook and rivet button fastening",
+          "Curved back",
+          "Angled patch pocket at chest",
+          "Angled back patch pockets",
+          "Ankle length",
+          "Wide leg fit"
+        ],
+        "imgSrc": "Images/overals.webp"
+      },
+      {
+        "name": "Ripped Denim Jeans ",
+        "price": 15.95,
+        "size": "8",
+        "description": [
+          "High waist five pocket jeans in rigid fabric",
+          "Extra long wide legs with rips",
+          "Zip and metal button closure."
+        ],
+        "imgSrc": "Images/denimjeans.webp"
+      },
+      {
+        "name": "Beige knitted Vest",
+        "price": 2,
+        "size": "Small",
+        "description": [
+          "V-neck",
+          "Sleeveless design",
+          "Ribbed hem and neckline - Regular fit"
+        ],
+        "imgSrc": "Images/beigevest.webp"
+      },
+      {
+        "name": "Light Green Plaid Blouse",
+        "price": 8.95,
+        "size": "Small",
+        "description": [
+          "crop-top",
+          "short-sleeve bell style ",
+          "stretch fit",
+          "cotton fabric"
+        ],
+        "imgSrc": "Images/plaidgreenblouse.webp"
+      },
+      {
+        "name": "Asymmetric Light Yellow Tweed Skirt",
+        "price": 10.95,
+        "size": "Medium",
+        "description": [
+          "Tweed finish",
+          "Flap design",
+          "Pocket on one side",
+          "Hidden side zip closure",
+          "Lined",
+          "100% Polyester",
+          "Hand wash cold"
+        ],
+        "imgSrc": "Images/tweedskirt.webp"
+      },
+      {
+        "name": "Satin Dark Green Midi Dress",
+        "price": 15.95,
+        "size": "Large",
+        "description": [
+          "Sweetheart neckline",
+          "Lightweight",
+          "A-line",
+          "Regular fit",
+          "non-strechy"
+        ],
+        "imgSrc": "Images/satingreendress.webp"
+      },
+      {
+        "name": "Black Leather Jacket",
+        "price": 25.95,
+        "size": "Large",
+        "description": [
+          "Dropped shoulders",
+          "Long sleeves ",
+          "2 front patch pockets with flap",
+          "Fully lined ",
+          "100% lamb leather",
+          "Boxy fit"
+        ],
+        "imgSrc": "Images/leatherjacket.webp"
+      },
+      {
+        "name": "Early 200s Layered Midi Skirt",
+        "price": 10.95,
+        "size": "Small",
+        "description": [
+          "Mid waist with smock detail",
+          "Ruffled layers",
+          "Abstract print",
+          "Regular fit",
+          "Made with more responsible fabrics"
+        ],
+        "imgSrc": "Images/patternlongskirt.webp"
+      },
+      {
+        "name": " Vintage Green Black Knitted Vest ",
+        "price": 12.95,
+        "size": "Large",
+        "description": ["V-neck", "Relaxed fit", "Ribbed Trims", "Soft fabric"],
+        "imgSrc": "Images/grrenbluevest.webp"
+      },
+      {
+        "name": " Satin Beige Drapped Top",
+        "price": 20.95,
+        "size": "Small",
+        "description": [
+          "Collared low neck-line",
+          "Long sleeves",
+          "Crop-Top",
+          "Structured fit"
+        ],
+        "imgSrc": "Images/satindrappedtop.webp"
+      },
+      {
+        "name": "Blue Daisy Oversized Knitted Cardigan",
+        "price": 15.95,
+        "size": "X-Large",
+        "description": [
+          "V-neck",
+          "Button-down",
+          "Yarn",
+          "Oversized fit",
+          "Long-sleeve",
+          "Hand wash cold"
+        ],
+        "imgSrc": "Images/flowercardigan.webp"
+      },
+      {
+        "name": "Carhartt Vintage Dark Denim Jacket",
+        "price": 75.95,
+        "size": "Large",
+        "description": [
+          "Heavy Duty zipper",
+          "sherpa inside lining",
+          "long-sleeve",
+          "regular fit"
+        ],
+        "imgSrc": "Images/vintagejacket.webp"
+      }
+    ],
+    "Shoes": [],
+    "Accessories": []
+  }
+}
