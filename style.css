@@ -692,6 +692,9 @@ ul {
   input {
     width: 80%;
   }
+  .container .row {
+    text-align: center;
+  }
 }
 
 @media (max-width: 540px) {
