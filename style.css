@@ -201,19 +201,28 @@ h3.bible-verse {
 
 /*--NEWSLETTER MAIN PAGE START--- */
 
-.newsletterimg img {
-  height: 60em;
-  float: left;
-  position: absolute;
+.newsletter-mp {
+  display: flex;
 }
-.newsletterform {
-  float: right;
-  padding: 9em 9em;
-  /* font-size: large; */
+
+.newsletter {
+  width: 50%;
+  padding: 2em;
+  min-height: 400px;
+}
+.form {
+  color: #222;
+  background: rgba(3, 53, 46, 0.867);
+}
+
+.newsletter-form label {
+  color: white;
+  font-size: large;
 }
 .newsletterinfo h2,
 h3 {
   color: white;
+  font-size: large;
 }
 .newsletterinfo h3 {
   text-transform: none;
@@ -657,6 +666,32 @@ ul {
     border: 0.01rem solid rgba(0, 0, 0, 0.1);
     display: block;
   }
+  .image-slideshow {
+    padding-top: 150px;
+  }
+  .image-caption h1 {
+    font-size: 40px;
+  }
+  .newsletter {
+    width: 100%;
+  }
+  .newsletter-mp {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    background-image: url(Images/wrinkledpaperbackground.webp);
+  }
+  .newsletter-form {
+    text-align: center;
+  }
+  .newsletterinfo {
+    text-align: center;
+    padding-left: 15px;
+  }
+  input {
+    width: 80%;
+  }
 }
 
 @media (max-width: 540px) {
@@ -667,7 +702,20 @@ ul {
   .submitbttn {
     text-align: center;
   }
+  .image-slideshow {
+    padding-top: 130px;
+  }
+  .image-caption h1 {
+    font-size: 4em;
+  }
+  .image-caption p {
+    font-size: 1.5em;
+  }
+  h3.bible-verse {
+    font-size: 1.5em;
+  }
 }
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
