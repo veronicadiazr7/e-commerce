@@ -1,12 +1,21 @@
 //PRODUCTS FETCH FROM JSON
-let productsHTML = document.querySelector(".product-container");
 
+//Declared where in the HTML file we wanted our json file code to be send to.
+/* The Document method querySelector() returns the first element 
+within the document that matches the specified selector, or group of selectors. */
+let productsHTML = document.querySelector(".product-container"); //section in shop.html
+
+//Used the Fetch API method:
+/* This function fetches the file from the path where it is
+saved and then returns the file as the response into the shop.html */
 fetch("products.json")
-  .then((x) => x.json())
+  .then((x) => x.json()) //The fetch() method returns a Promise so you can use the then() methods
   .then((x) => {
-    const apparel = x.Products.Apparel;
+    const apparel = x.Products.Apparel; //Stating the location of the json files we want
     apparel.forEach((y) => {
-      productsHTML.innerHTML += `
+      //give parameter of "y" so we can call it back later
+      //With productsHTML.innerHTML we arrange our data how we wanted to be displayed in the HTML
+      productsHTML.innerHTML += `  
       <div class="product">
     <div class="card">
       <!--PRODUCT IMAGE-->
